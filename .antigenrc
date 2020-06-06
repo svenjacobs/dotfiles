@@ -3,7 +3,6 @@ antigen use oh-my-zsh
 antigen bundle command-not-found
 antigen bundle direnv
 antigen bundle git
-antigen bundle gnu-utils
 antigen bundle gradle
 antigen bundle iterm2
 antigen bundle jenv
