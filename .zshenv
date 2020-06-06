@@ -1,0 +1,15 @@
+export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
+export FLUTTER_HOME="$HOME/Development/Tools/flutter"
+# Explicitly define HISTFILE because Android Studio / IntellJ IDEA has a bug
+# https://youtrack.jetbrains.com/issue/IDEA-204243#focus=streamItem-27-3241279-0-0
+export HISTFILE="$HOME/.zsh_history"
+export HOMEBREW_INSTALL_CLEANUP="true"
+export HOMEBREW_NO_ANALYTICS=1
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home"
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+
+export PATH="/usr/local/bin:$HOME/bin:$FLUTTER_HOME/bin:$HOME/.gem/ruby/2.6.0/bin:$PATH"
+
+# .zshenv.secret contains sensitive environment variables with API keys etc.
+source $HOME/.zshenv.secret
