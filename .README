@@ -1,9 +1,0 @@
-How to set up dotfiles
-
-1) alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
-2) git clone --bare git@github.com:svenjacobs/dotfiles.git $HOME/.dotfiles
-3) dotfiles checkout
-4) dotfiles config --local status.showUntrackedFiles no
-
-Also read https://www.atlassian.com/git/tutorials/dotfiles
-
