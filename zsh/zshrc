@@ -10,6 +10,8 @@ source $HOME/.dotfiles/zsh/inc/nvm-hook.zsh
 source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
 source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
 
+source $HOME/.dotfiles/zsh/inc/zsh-autosuggestions-paste-fix.zsh
+
 ## Aliases
 
 # Fix ls colors because we're using GNU coreutils
