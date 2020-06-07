@@ -2,9 +2,9 @@
 
 export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
 export FLUTTER_HOME="$HOME/Development/Tools/flutter"
-# Explicitly define HISTFILE because Android Studio / IntellJ IDEA has a bug
+# Explicitly export HISTFILE because Android Studio / IntellJ IDEA has a bug
 # https://youtrack.jetbrains.com/issue/IDEA-204243#focus=streamItem-27-3241279-0-0
-export HISTFILE="$HOME/.zsh_history"
+export HISTFILE
 export HOMEBREW_INSTALL_CLEANUP="true"
 export HOMEBREW_NO_ANALYTICS=1
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home"
