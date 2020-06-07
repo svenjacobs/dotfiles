@@ -1,14 +1,17 @@
-# Antigen
+## Antigen
 # Install with "brew install antigen"
 source /usr/local/share/antigen/antigen.zsh
 antigen init $HOME/.antigenrc
 
-# nvm
+## nvm
 source $HOME/.dotfiles/zsh/inc/nvm-hook.zsh
 
-# Google Cloud SDK
+## Google Cloud SDK
 source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
 source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
 
+## Aliases
+
 # Fix ls colors because we're using GNU coreutils
 alias ls="ls --color=auto"
+alias cdd="cd $DEV_HOME"

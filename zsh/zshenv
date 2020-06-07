@@ -1,7 +1,8 @@
 # PATH is extended in .zprofile
 
 export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
-export FLUTTER_HOME="$HOME/Development/Tools/flutter"
+export DEV_HOME="$HOME/Development"
+export FLUTTER_HOME="$DEV_HOME/Tools/flutter"
 # Explicitly export HISTFILE because Android Studio / IntellJ IDEA has a bug
 # https://youtrack.jetbrains.com/issue/IDEA-204243#focus=streamItem-27-3241279-0-0
 export HISTFILE
