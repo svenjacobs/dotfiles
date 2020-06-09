@@ -52,7 +52,17 @@ module.exports = {
     borderColor: '#333',
 
     // custom CSS to embed in the main window
-    css: '',
+    css: `
+      .term_wrapper {
+        opacity: 0.6;
+      } 
+
+      .term_active .term_wrapper {
+        opacity: 1.0;
+        transition: opacity 0.12s ease-in-out;
+        will-change: opacity;
+      }
+    `,
 
     // custom CSS to embed in the terminal window
     termCSS: '',
@@ -141,12 +151,12 @@ module.exports = {
 
     summon: {
       hideDock: false,
-      hideOnBlur: true,
+      hideOnBlur: false,
       hotkey: 'Ctrl+`',
     },
 
     hyperStatusLine: {
-      footerTransparent: true
+      footerTransparent: false
     },
   },
 
@@ -156,7 +166,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ['hyperterm-summon', "hypercwd", "hyper-statusline", "hyperterm-dibdabs"],
+  plugins: ["hyperterm-summon", "hypercwd", "hyper-statusline", "hyperterm-dibdabs"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
