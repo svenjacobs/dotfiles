@@ -10,10 +10,13 @@ source $HOME/.dotfiles/zsh/inc/nvm-hook.zsh
 source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
 source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
 
-source $HOME/.dotfiles/zsh/inc/zsh-autosuggestions-paste-fix.zsh
-
 ## Aliases
-
 # Fix ls colors because we're using GNU coreutils
 alias ls="ls --color=auto"
 alias cdd="cd $DEV_HOME"
+
+## Miscellaneous
+# Temporary fix for white-on-white paste in Hyper terminal
+unset zle_bracketed_paste
+
+source $HOME/.dotfiles/zsh/inc/zsh-autosuggestions-paste-fix.zsh
