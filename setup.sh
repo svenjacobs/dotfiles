@@ -11,3 +11,6 @@ ln -s .dotfiles/zsh/antigenrc .antigenrc
 
 # Vim
 ln -s .dotfiles/vim/vimrc .vimrc
+
+# Hyper
+ln -s .dotfiles/hyper/hyper.js .hyper.js
