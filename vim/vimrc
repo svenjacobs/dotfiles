@@ -1,87 +1,37 @@
-" Differences between Linux and Windows
-" =====================================
-"
-" ~/.vimrc -> $HOME/_vimrc
-" ~/.vim -> $HOME/vimfiles
-"
-" How to install pathogene and 'solarized' colors
-" ===============================================
-"
-" cd ~/.vim
-" git clone git://github.com/tpope/vim-pathogen.git .
-" mkdir bundle
-" cd bundle
-" git clone git://github.com/altercation/vim-colors-solarized.git
-"
-" Installing even more addons
-" ===========================
-"
-" cd ~/.vim/bundle
-" git clone https://github.com/scrooloose/syntastic.git
-" git clone https://github.com/majutsushi/tagbar
-" git clone git://github.com/walm/jshint.vim.git
-"
-" TagBar requires Exuberant ctags (see http://www.vim.org/scripts/script.php?script_id=3465)
-" JSHint requires nodejs and jshint module (npm install jshint)
-
-call pathogen#infect()
-
 syntax on
 
-set nocompatible
+filetype indent plugin on
 
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-set smarttab
-set expandtab
 set autoindent
-set smartindent
+set background=dark
+set backspace=indent,eol,start
+set cmdheight=2
+set confirm
 set cursorline
-set ruler
+set encoding=UTF-8
+set expandtab
+set fileformat=unix
+set hlsearch
+set ignorecase
+set incsearch
 set nobackup
+set nocompatible
 set nowritebackup
+set nu rnu
+set relativenumber
+set ruler
+set scrolloff=2
+set shiftwidth=4
 set showcmd
 set showmode
-set encoding=UTF-8
-set visualbell
-set backspace=indent,eol,start
-set scrolloff=2
 set sidescrolloff=2
-set ignorecase
-set hlsearch
-set incsearch
-set fileformat=unix
-set background=dark "light
+set smartindent
+set smarttab
+set softtabstop=4
+set tabstop=4
+set undofile
+set visualbell
 
-if version >= 703
-    set colorcolumn=85
-    set relativenumber
-    set undofile
-endif
-
-colorscheme solarized
-
-if has("unix")
-    set guifont=Liberation\ Mono\ 12
-elseif has("win32")
-    set guifont=Consolas:h12
-endif
-
-"nnoremap <up> <nop>
-"nnoremap <down> <nop>
-"nnoremap <left> <nop>
-"nnoremap <right> <nop>
-"inoremap <up> <nop>
-"inoremap <down> <nop>
-"inoremap <left> <nop>
-"inoremap <right> <nop>
-
-nnoremap j gj
-nnoremap k gk
-
-" Removes all trailing spaces in file
-:nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
-
-" TagBar
-nmap <F8> :TagbarToggle<CR>
+highlight LineNr ctermfg=grey
+highlight CursorLine cterm=bold ctermbg=blue ctermfg=white
+highlight CursorLineNR ctermfg=white cterm=bold

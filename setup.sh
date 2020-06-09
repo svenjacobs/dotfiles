@@ -1,16 +1,16 @@
 #!/usr/bin/env zsh
 
-cd $HOME
-
 # Zsh
-ln -s .dotfiles/zsh/zprofile .zprofile
-ln -s .dotfiles/zsh/zshenv .zshenv
-ln -s .dotfiles/zsh/zshenv.secret .zshenv.secret
-ln -s .dotfiles/zsh/zshrc .zshrc
-ln -s .dotfiles/zsh/antigenrc .antigenrc
-
-# Vim
-ln -s .dotfiles/vim/vimrc .vimrc
+ln -sr $HOME/.dotfiles/zsh/zprofile $HOME/.zprofile &>/dev/null
+ln -sr $HOME/.dotfiles/zsh/zshenv $HOME/.zshenv &>/dev/null
+ln -sr $HOME/.dotfiles/zsh/zshenv.secret $HOME/.zshenv.secret &>/dev/null
+ln -sr $HOME/.dotfiles/zsh/zshrc $HOME/.zshrc &>/dev/null
+ln -sr $HOME/.dotfiles/zsh/antigenrc $HOME/.antigenrc &>/dev/null
 
 # Hyper
-ln -s .dotfiles/hyper/hyper.js .hyper.js
+ln -sr $HOME/.dotfiles/hyper/hyper.js $HOME/.hyper.js &>/dev/null
+
+# Vim
+mkdir -p $HOME/.vim
+ln -sr $HOME/.dotfiles/vim/vimrc $HOME/.vimrc &>/dev/null
+ln -sr $HOME/.dotfiles/vim/pack $HOME/.vim/pack &>/dev/null
