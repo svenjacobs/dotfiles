@@ -14,3 +14,6 @@ ln -sr $HOME/.dotfiles/hyper/hyper.js $HOME/.hyper.js &>/dev/null
 mkdir -p $HOME/.vim
 ln -sr $HOME/.dotfiles/vim/vimrc $HOME/.vimrc &>/dev/null
 ln -sr $HOME/.dotfiles/vim/pack $HOME/.vim/pack &>/dev/null
+
+cd $HOME/.dotfiles
+git submodule update --init --recursive
