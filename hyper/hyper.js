@@ -52,17 +52,7 @@ module.exports = {
     borderColor: '#333',
 
     // custom CSS to embed in the main window
-    css: `
-      .term_wrapper {
-        opacity: 0.6;
-      } 
-
-      .term_active .term_wrapper {
-        opacity: 1.0;
-        transition: opacity 0.12s ease-in-out;
-        will-change: opacity;
-      }
-    `,
+    css: '',
 
     // custom CSS to embed in the terminal window
     termCSS: '',
@@ -171,7 +161,8 @@ module.exports = {
     "hypercwd",
     "hyper-statusline",
     "hyperterm-dibdabs",
-    "hyper-font-ligatures"
+    "hyper-font-ligatures",
+    "hyper-highlight-pane"
   ],
 
   // in development, you can create a directory under
