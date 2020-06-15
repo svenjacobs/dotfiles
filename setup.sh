@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 
 # Zsh
 ln -sr $HOME/.dotfiles/zsh/zprofile $HOME/.zprofile &>/dev/null
