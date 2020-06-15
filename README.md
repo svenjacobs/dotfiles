@@ -5,6 +5,7 @@ Configuration is provided for the following applications:
 * [Zsh](http://zsh.sourceforge.net/)
 * [Vim](https://www.vim.org/)
 * [Hyper](https://hyper.is/)
+* [Nvm](https://github.com/nvm-sh/nvm/)
 
 ## How to set up dotfiles
 

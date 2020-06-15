@@ -15,5 +15,9 @@ mkdir -p $HOME/.vim
 ln -sr $HOME/.dotfiles/vim/vimrc $HOME/.vimrc &>/dev/null
 ln -sr $HOME/.dotfiles/vim/pack $HOME/.vim/pack &>/dev/null
 
+# Nvm
+mkdir -p $HOME/.nvm
+ln -sr $HOME/.dotfiles/nvm/default-packages $HOME/.nvm/default-packages
+
 cd $HOME/.dotfiles
 git submodule update --init --recursive
