@@ -8,6 +8,8 @@ path=(
     /usr/local/opt/findutils/libexec/gnubin
     $path
     $HOME/bin
+    $ANDROID_SDK_ROOT/tools
+    $ANDROID_SDK_ROOT/platform-tools
     $FLUTTER_HOME/bin
     $HOME/.gem/ruby/2.6.0/bin
 )
