@@ -16,6 +16,7 @@ brew install zsh
 brew install autojump
 brew install antigen
 brew install vim
+brew install jenv
 brew cask install hyper
 ```
 
@@ -23,3 +24,11 @@ then:
 
 1) `git clone git@github.com:svenjacobs/dotfiles.git $HOME/.dotfiles`
 2) `$HOME/.dotfiles/setup.sh`
+
+### TODOs after setup
+
+* Configure `JAVA_HOME` with [jenv](https://github.com/jenv/jenv)
+  ```
+  jenv enable-plugin export
+  ```
+
