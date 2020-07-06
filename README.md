@@ -27,8 +27,13 @@ then:
 
 ### TODOs after setup
 
+* Install [nvm](https://github.com/nvm-sh/nvm)
 * Configure `JAVA_HOME` with [jenv](https://github.com/jenv/jenv)
   ```
   jenv enable-plugin export
+  ```
+* Install npm-merge-driver
+  ```
+  npx npm-merge-driver install --global
   ```
 
