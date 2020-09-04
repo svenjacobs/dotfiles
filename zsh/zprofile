@@ -6,6 +6,7 @@ typeset -U path
 path=(
     /usr/local/opt/coreutils/libexec/gnubin
     /usr/local/opt/findutils/libexec/gnubin
+    /usr/local/opt/gnu-sed/libexec/gnubin
     $path
     $HOME/bin
     $ANDROID_SDK_ROOT/tools
