@@ -1,5 +1,9 @@
 #!/usr/bin/env sh
 
+# Git
+ln -sr $HOME/.dotfiles/git/gitconfig $HOME/.gitconfig &>/dev/null
+ln -sr $HOME/.dotfiles/git/gitignore_global $HOME/.gitignore_global &>/dev/null
+
 # Zsh
 ln -sr $HOME/.dotfiles/zsh/zprofile $HOME/.zprofile &>/dev/null
 ln -sr $HOME/.dotfiles/zsh/zshenv $HOME/.zshenv &>/dev/null
@@ -17,7 +21,7 @@ ln -sr $HOME/.dotfiles/vim/pack $HOME/.vim/pack &>/dev/null
 
 # Nvm
 mkdir -p $HOME/.nvm
-ln -sr $HOME/.dotfiles/nvm/default-packages $HOME/.nvm/default-packages
+ln -sr $HOME/.dotfiles/nvm/default-packages $HOME/.nvm/default-packages &>/dev/null
 
 cd $HOME/.dotfiles
 git submodule update --init --recursive
