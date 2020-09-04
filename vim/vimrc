@@ -32,6 +32,8 @@ set tabstop=4
 set undofile
 set visualbell
 "set termguicolors
+set listchars=tab:→·,space:·
+set list
 
 highlight LineNr ctermfg=grey
 highlight CursorLine cterm=bold ctermbg=blue ctermfg=white
