@@ -2,10 +2,11 @@
 
 Configuration is provided for the following applications:
 
-* [Zsh](http://zsh.sourceforge.net/)
-* [Vim](https://www.vim.org/)
+* [Git](https://git-scm.com/)
 * [Hyper](https://hyper.is/)
 * [Nvm](https://github.com/nvm-sh/nvm/)
+* [Vim](https://www.vim.org/)
+* [Zsh](http://zsh.sourceforge.net/)
 
 ## How to set up dotfiles
 
