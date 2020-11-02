@@ -10,6 +10,7 @@ path=(
     $path
     $HOME/bin
     $ANDROID_SDK_ROOT/tools
+    $ANDROID_SDK_ROOT/tools/bin
     $ANDROID_SDK_ROOT/platform-tools
     $FLUTTER_HOME/bin
     $HOME/.pub-cache/bin
