@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
 
+# bin
+ln -sr $HOME/.dotfiles/bin $HOME/bin &>/dev/null
+
 # Git
 ln -sr $HOME/.dotfiles/git/gitconfig $HOME/.gitconfig &>/dev/null
 ln -sr $HOME/.dotfiles/git/gitignore_global $HOME/.gitignore_global &>/dev/null
