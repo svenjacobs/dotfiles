@@ -7,7 +7,7 @@ antigen bundle direnv
 antigen bundle git
 antigen bundle gradle
 antigen bundle iterm2
-antigen bundle jenv
+antigen bundle sdk
 antigen bundle npm
 antigen bundle nvm
 antigen bundle osx

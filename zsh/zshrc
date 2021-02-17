@@ -21,3 +21,8 @@ alias studio="open -b com.google.android.studio"
 #unset zle_bracketed_paste
 
 source $HOME/.dotfiles/zsh/inc/zsh-autosuggestions-paste-fix.zsh
+
+## sdkman
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
