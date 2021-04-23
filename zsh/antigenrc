@@ -12,11 +12,12 @@ antigen bundle npm
 antigen bundle nvm
 antigen bundle osx
 antigen bundle thefuck
-antigen bundle vi-mode
 
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-syntax-highlighting
+
+antigen bundle jeffreytse/zsh-vi-mode
 
 antigen theme robbyrussell
 
