@@ -1,6 +1,7 @@
 # PATH is extended in .zprofile
 
 export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
+export ANDROID_HOME=$ANDROID_SDK_ROOT
 export DEV_HOME="$HOME/Development"
 export FVM_HOME="$HOME/.fvm"
 export FLUTTER_HOME="$FVM_HOME/default"
