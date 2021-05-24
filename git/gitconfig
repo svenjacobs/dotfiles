@@ -25,6 +25,7 @@
 	rebase = true
 [commit]
 	template = /Users/sven/.stCommitMsg
+	gpgsign = true
 [rerere]
 	enabled = true
 	autoupdate = true
