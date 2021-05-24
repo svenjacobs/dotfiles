@@ -16,5 +16,7 @@ path=(
     $FLUTTER_HOME/bin
     $HOME/.pub-cache/bin
     $HOME/.gem/ruby/2.6.0/bin
+    $DEV_HOME/Tools/dex-method-counts
+    $DEV_HOME/Tools/fdroidserver
 )
 export PATH

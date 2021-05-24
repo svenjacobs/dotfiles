@@ -2,7 +2,7 @@
 
 export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
 export ANDROID_HOME=$ANDROID_SDK_ROOT
-export DEV_HOME="$HOME/Development"
+export DEV_HOME="$HOME/Dev"
 export FVM_HOME="$HOME/.fvm"
 export FLUTTER_HOME="$FVM_HOME/default"
 # Explicitly define HISTFILE because Android Studio / IntellJ IDEA has a bug
