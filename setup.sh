@@ -12,7 +12,7 @@ ln -sr $HOME/.dotfiles/zsh/zprofile $HOME/.zprofile &>/dev/null
 ln -sr $HOME/.dotfiles/zsh/zshenv $HOME/.zshenv &>/dev/null
 ln -sr $HOME/.dotfiles/zsh/zshenv.secret $HOME/.zshenv.secret &>/dev/null
 ln -sr $HOME/.dotfiles/zsh/zshrc $HOME/.zshrc &>/dev/null
-ln -sr $HOME/.dotfiles/zsh/antigenrc $HOME/.antigenrc &>/dev/null
+ln -sr $HOME/.dotfiles/zsh/zplug.zsh $HOME/.zplug.zsh &>/dev/null
 
 # Hyper
 ln -sr $HOME/.dotfiles/hyper/hyper.js $HOME/.hyper.js &>/dev/null
