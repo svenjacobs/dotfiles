@@ -2,4 +2,6 @@ npm-check-updates
 typescript
 eslint
 firebase-tools
+@vue/cli
+@vue/cli-service-global
 
