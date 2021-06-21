@@ -1,0 +1,39 @@
+#!/usr/bin/env zsh
+
+echo
+echo "######################################"
+echo "#  Updating submodules in .dotfiles  #"
+echo "######################################"
+echo
+git -C $HOME/.dotfiles submodule update --rebase --remote
+
+echo
+echo "######################################"
+echo "#       Updating Zplug plugins       #"
+echo "######################################"
+echo
+source $HOME/.zplug.zsh
+zplug update
+
+echo
+echo "######################################"
+echo "# Updating Homebrew formulas & casks #"
+echo "######################################"
+echo
+brew update && brew upgrade && brew cleanup
+
+echo
+echo "######################################"
+echo "#          Updating sdkman           #"
+echo "######################################"
+echo
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk selfupdate
+
+echo
+echo "######################################"
+echo "#            Updating nvm            #"
+echo "######################################"
+echo
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+
