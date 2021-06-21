@@ -1,5 +1,6 @@
 # PATH is extended in .zprofile
 
+export ZPLUG_HOME=/usr/local/opt/zplug
 export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
 export ANDROID_HOME=$ANDROID_SDK_ROOT
 export DEV_HOME="$HOME/Dev"
