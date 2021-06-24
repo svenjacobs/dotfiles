@@ -3,11 +3,12 @@ NVM_AUTOLOAD=1
 
 ## Zsh
 setopt auto_cd
-setopt append_history
+setopt share_history
 setopt auto_pushd
 setopt hist_expire_dups_first
 setopt hist_reduce_blanks
 setopt hist_verify
+zstyle ':completion:*' menu select
 
 ## Zplug
 # Install with "brew install zplug"
