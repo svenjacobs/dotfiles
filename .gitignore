@@ -1,0 +1,4 @@
+.zshenv.secret
+.dotfiles
+.vim/.netrwhist
+

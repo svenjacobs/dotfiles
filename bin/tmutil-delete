@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+
+if [[ -z $1 ]]
+then
+    printf "tmutil-delete PATTERN\n"
+    exit 1
+fi
+
+DIR="/Volumes/Time\ Machine\ Backups"
+
+printf "Do you want to delete all backups starting with \"$1\"? (y/n) "
+read answer
+
+if [[ $answer == "y" ]]
+then
+    tmutil listbackups | grep --color=never "^$1" | xargs -I{} sh -c "echo 'Deleting {}' && tmutil delete -d $DIR -t {}"
+else
+    exit 0
+fi
+

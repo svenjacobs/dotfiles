@@ -1,0 +1,18 @@
+[submodule ".vim/pack/thirdparty/start/vim-airline"]
+	path = .vim/pack/thirdparty/start/vim-airline
+	url = git@github.com:vim-airline/vim-airline.git
+[submodule ".vim/pack/thirdparty/start/vim-surround"]
+	path = .vim/pack/thirdparty/start/vim-surround
+	url = git@github.com:tpope/vim-surround.git
+[submodule ".vim/pack/thirdparty/start/vim-repeat"]
+	path = .vim/pack/thirdparty/start/vim-repeat
+	url = git@github.com:tpope/vim-repeat.git
+[submodule ".vim/pack/thirdparty/start/vim-toml"]
+	path = .vim/pack/thirdparty/start/vim-toml
+	url = git@github.com:cespare/vim-toml.git
+[submodule ".vim/pack/thirdparty/start/vim-markdown"]
+	path = .vim/pack/thirdparty/start/vim-markdown
+	url = git@github.com:plasticboy/vim-markdown.git
+[submodule ".vim/pack/thirdparty/start/editorconfig-vim"]
+	path = .vim/pack/thirdparty/start/editorconfig-vim
+	url = git@github.com:editorconfig/editorconfig-vim

@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+COUNT=$(find $HOME -iname "*~" -type f -delete -exec echo 'x' \; | wc -l)
+echo "Deleted $COUNT file(s)"

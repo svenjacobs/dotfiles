@@ -1,0 +1,61 @@
+[user]
+	name = "Sven Jacobs"
+	useconfigonly = true
+	signingkey = A476C518A3A2383C
+	email =
+[core]
+	excludesfile = ~/.gitignore_global
+	autocrlf = input
+	pager = diff-so-fancy | less --tabs=4 -RFX
+	commentChar = ";"
+[init]
+	defaultBranch = main
+[alias]
+    upd = commit --amend --no-edit --date=now
+	forcepush = push --force-with-lease --force-if-includes
+[credential]
+	helper = osxkeychain
+[fetch]
+	prune = true
+[push]
+	default = upstream
+[pull]
+	rebase = true
+[commit]
+	template = /Users/sven/.stCommitMsg
+	gpgsign = true
+[rerere]
+	enabled = true
+	autoupdate = true
+[merge]
+	tool = Kaleidoscope
+[diff]
+	tool = Kaleidoscope
+	compactionHeuristic = true
+[difftool]
+	prompt = false
+[difftool "sourcetree"]
+	cmd = /usr/local/bin/ksdiff -w \"$LOCAL\" \"$REMOTE\"
+	path = 
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[mergetool]
+	prompt = false
+[mergetool "sourcetree"]
+	cmd = /usr/local/bin/ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
+	process = git-lfs filter-process
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[gpg]
+	program = /usr/local/bin/gpg
