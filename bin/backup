@@ -1,0 +1,30 @@
+#!/usr/bin/env sh
+BASE_DIR=/Users/sven.jacobs
+ulimit -n 1024
+duplicity backup \
+    --verbosity 4 \
+    --full-if-older-than 1M \
+    --filter-literal \
+    --use-agent \
+    --encrypt-sign-key C1F2ABB72F1418EE7E75479CA476C518A3A2383C \
+    --exclude $BASE_DIR/Applications \
+    --exclude $BASE_DIR/Downloads \
+    --exclude $BASE_DIR/Library/Caches \
+    --exclude "$BASE_DIR/Library/Application Support/Google/DriveFS" \
+    --exclude "$BASE_DIR/VirtualBox VMs" \
+    --exclude $BASE_DIR/.Trash \
+    --exclude $BASE_DIR/.gradle \
+    --exclude $BASE_DIR/.m2 \
+    --exclude $BASE_DIR/.android \
+    --exclude $BASE_DIR/.konan \
+    --exclude $BASE_DIR/.node \
+    --exclude $BASE_DIR/.npm \
+    --exclude $BASE_DIR/.pub-cache \
+    --exclude $BASE_DIR/.pkgx \
+    --exclude $BASE_DIR/.rustup \
+    --exclude $BASE_DIR/.cache \
+    --exclude $BASE_DIR/.cargo \
+    --exclude $BASE_DIR/.sdkman \
+    $BASE_DIR \
+    file:///Volumes/home/Backups/MacBook
+
