@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 BASE_DIR=/Users/sven.jacobs
 ulimit -n 1024
-duplicity backup \
+/opt/homebrew/bin/duplicity backup \
     --verbosity 4 \
     --full-if-older-than 1M \
     --filter-literal \
@@ -10,6 +10,8 @@ duplicity backup \
     --exclude $BASE_DIR/Applications \
     --exclude $BASE_DIR/Downloads \
     --exclude $BASE_DIR/Library/Caches \
+    --exclude $BASE_DIR/Library/CloudStorage \
+    --exclude $BASE_DIR/Library/Metadata \
     --exclude "$BASE_DIR/Library/Application Support/Google/DriveFS" \
     --exclude "$BASE_DIR/VirtualBox VMs" \
     --exclude $BASE_DIR/.Trash \
