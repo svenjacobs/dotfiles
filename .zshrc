@@ -18,11 +18,10 @@ source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completio
 
 ## Aliases
 alias ls="lsd"
-alias rm="rm -I"
+alias rm="rm"
 alias f="fuck"
-alias s="kitty +kitten ssh"
 alias config="$(which git) --git-dir=$HOME/.dotfiles --work-tree=$HOME"
-alias ncu="pkgx npx npm-check-updates@latest --"
+alias ncu="pkgx npx --yes npm-check-updates --"
 
 ## Miscellaneous
 source $HOME/.zsh/inc/zsh-autosuggestions-paste-fix.zsh

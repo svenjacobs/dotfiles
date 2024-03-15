@@ -30,5 +30,5 @@ tldr --update
 
 print
 print -P '%F{blue}⬆️ [6/6] %F{green}Updating pkgx pantry%f'
-pkgx --sync
+pkgx --sync >/dev/null 2>&1
 
